@@ -1,0 +1,17 @@
+// Site overrides
+article {
+  p { margin-bottom: 0;}
+  a {
+    color: black;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  blockquote {
+    border-left: none;
+    font-style: normal;
+    p {
+      margin: 10px 0;
+    }
+  }
+}
