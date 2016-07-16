@@ -15,8 +15,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: allizad
 github_username:  allizad
-source: src
-destination: public
 permalink: /:title.html
 
 # Build settings
