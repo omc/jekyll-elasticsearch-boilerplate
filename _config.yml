@@ -10,7 +10,7 @@ title: Shakestat
 email: allison@allizad.com
 description: >
   The fastest and easiest way to search through Shakespeare's work and
-  explore the statistics.
+  explore its language statistics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: allizad

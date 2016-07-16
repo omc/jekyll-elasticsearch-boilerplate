@@ -4,20 +4,22 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <p class="lead">
+    The fastest way to search Shakespeare's texts and explore his language statistics.
+  </p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
+  <br>
+
+  <h1>The plays</h1>
+  <br>
+  <ul class="list-unstyled">
+    {% for post in site.posts reversed %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        <h4>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> | <small><span class="post-meta">{{ post.date | date: "%Y" }}</span></small>
+        </h4>
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

@@ -1,38 +1,40 @@
-<footer class="site-footer">
+<footer>
+  <div class="container">
 
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+    <div class="col-md-3">
+      <ul class="list-unstyled">
+        <li><h6 class="text-uppercase">Project</h6></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Source code</a></li>
+        <li><a href="">Technology</a></li>
+        <li><a href="">How we built it</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <ul class="list-unstyled">
+        <li><h6 class="text-uppercase">Resources</h6></li>
+        <li><a href="">Text sources</a></li>
+        <li><a href="">Reference</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <ul class="list-unstyled">
+        <li><h6 class="text-uppercase">Partners</h6></li>
+        <li><a href="">One More Cloud</a></li>
+        <li><a href="">Bonsai</a></li>
+        <li><a href="">Heroku</a></li>
+        <li><a href="">Shakespeare at Winedale</a></li>
+        <li><a href="">University of Texas at Austin</a></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <p><small><i>Shakestat is a project by</i></small></p>
+      <h3>One More Cloud</h3>
+      <p>The search experts.</p>
+      <p>Makers of <a href="">Bonsai</a> and <a href="">Websolr</a>.</p>
+      <p><a href="">Contact Us</a></p>
     </div>
 
-  </div>
 
+  </div>
 </footer>
