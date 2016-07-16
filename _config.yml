@@ -19,3 +19,8 @@ permalink: /:title.html
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - kramdown
+  - jekyll
+  - github-pages
