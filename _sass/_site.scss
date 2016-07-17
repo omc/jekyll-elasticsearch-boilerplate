@@ -2,6 +2,14 @@
   padding: 3em 0;
 }
 
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+}
+
 
 
 article {
