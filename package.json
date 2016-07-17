@@ -1,0 +1,27 @@
+{
+  "name": "shakestat",
+  "version": "1.0.0",
+  "description": "The fastest and easiest way to search through Shakespeare's work and",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omc/jekyll-elasticsearch-boilerplate.git"
+  },
+  "keywords": [
+    "shakespeare",
+    "elasticsearch",
+    "bonsai",
+    "one",
+    "more",
+    "cloud"
+  ],
+  "author": "Allison Zadrozny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omc/jekyll-elasticsearch-boilerplate/issues"
+  },
+  "homepage": "https://github.com/omc/jekyll-elasticsearch-boilerplate#readme"
+}
