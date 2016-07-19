@@ -18,14 +18,17 @@ github_username:  allizad
 permalink: /:title.html
 destination: public
 
-elasticsearch:
-  index_name: "jekyll-shakestat"
+# elasticsearch:
+#   index_name: "jekyll-shakestat"
 
 # Build settings
 markdown: kramdown
 
+exclude:
+  - node_modules
+
 gems:
   - kramdown
   - jekyll
-  - github-pages
-  - searchyll
+  # - github-pages
+  # - searchyll
