@@ -18,8 +18,9 @@ github_username:  allizad
 permalink: /:title.html
 destination: public
 
-elasticsearch:
-  index_name: "jekyll-shakestat"
+# elasticsearch:
+#   url: "http://localhost:9200"
+#   index_name: "jekyll-shakestat"
 
 # Build settings
 markdown: kramdown
@@ -31,4 +32,4 @@ gems:
   - kramdown
   - jekyll
   # - github-pages
-  - searchyll
+  # - searchyll
