@@ -37,13 +37,17 @@ class Search extends Component {
         <SearchkitProvider searchkit={sk}>
           <div className="search">
             <div className="search__query">
-              <Searchbox searchOnChange={true}
+              <Searchbox searchOnChange={true} translations={{"searchbox.placeholder":"search Shakespeare's text", "NoHits.DidYouMean":"Search for {suggestion}."}}
                 queryFields={["text", "title"]}/>
             </div>
             <div className="search__results">
               <Hits hitsPerPage={20}
                 highlightFields={["title", "text"]}
                 itemComponent={HitItem}/>
+              <NoHits className="sk-hits" translations={{
+                "NoHits.NoResultsFound":"No results were found for {query}",
+                "NoHits.DidYouMean":"Search for {suggestion}"
+              }} suggestionsField="text"/>
             </div>
          </div>
         </SearchkitProvider>
