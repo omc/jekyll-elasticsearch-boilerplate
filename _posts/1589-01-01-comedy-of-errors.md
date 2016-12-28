@@ -3,6 +3,8 @@ layout: post
 title: "Comedy of Errors"
 date: 1598-01-01 15:02:16 -0700
 categories: comedy
+authors:
+  - William Shakespeare
 ---
 
 <h3>ACT I</h3>

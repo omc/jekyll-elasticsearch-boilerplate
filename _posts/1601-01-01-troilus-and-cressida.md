@@ -3,6 +3,8 @@ layout: post
 title: "Troilus and Cressida"
 date: 1601-01-01 15:02:16 -0700
 categories: comedy
+authors:
+  - William Shakespeare
 ---
 
 <h3>ACT I</h3>

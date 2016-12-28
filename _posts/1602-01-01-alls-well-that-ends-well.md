@@ -3,6 +3,8 @@ layout: post
 title: "Alls Well That Ends Well"
 date: 1602-01-01 15:02:16 -0700
 categories: comedy
+authors:
+  - William Shakespeare
 ---
 
 ### ACT I

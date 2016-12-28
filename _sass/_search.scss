@@ -6,9 +6,16 @@ em {
   background-color: $em-highlight-color;
 }
 
+.search-wrapper {
+  
+}
 
 .sk-hits {
   .sk-hits-hit.sk-hits__item {
     margin: 1em 0;
   }
+}
+
+.sk-search-box {
+  border: 1px solid grey;
 }

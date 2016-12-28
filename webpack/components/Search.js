@@ -31,17 +31,29 @@ class Search extends Component {
     const SearchkitProvider = Searchkit.SearchkitProvider;
     const Searchbox = Searchkit.SearchBox;
 
+    var multiMatchOpts = {
+      "multi_match" : {
+      "operator":   "or"
+      }
+    }
+
+    var queryOpts = {
+      analyzer:"standard"
+    }
+
     return (
       <div>
-        <h3>Search Component!</h3>
         <SearchkitProvider searchkit={sk}>
           <div className="search">
             <div className="search__query">
-              <Searchbox searchOnChange={true} translations={{"searchbox.placeholder":"search Shakespeare's text", "NoHits.DidYouMean":"Search for {suggestion}."}}
+              <Searchbox searchOnChange={true}
+                autoFocus={true}
+                queryOptions={queryOpts}
+                translations={{"searchbox.placeholder":"tomorrow and tomorrow and tomorrow", "NoHits.DidYouMean":"Search for {suggestion}."}}
                 queryFields={["text", "title"]}/>
             </div>
             <div className="search__results">
-              <Hits hitsPerPage={20}
+              <Hits hitsPerPage={50}
                 highlightFields={["title", "text"]}
                 itemComponent={HitItem}/>
               <NoHits className="sk-hits" translations={{

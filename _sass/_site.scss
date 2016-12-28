@@ -28,3 +28,12 @@ article {
     }
   }
 }
+
+a.anchor-line-link {
+  color: rgba(128, 128, 128, 0.18);
+  position: absolute;
+  left: 20px;
+  &:hover {
+    color: $link-color;
+  }
+}
