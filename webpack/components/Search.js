@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import Searchkit, {
   Pagination,
   PaginationSelect,
+  RefinementListFilter,
   Hits,
   HitItemProps,
   NoHits
@@ -51,6 +52,13 @@ class Search extends Component {
                 queryOptions={queryOpts}
                 translations={{"searchbox.placeholder":"tomorrow and tomorrow and tomorrow", "NoHits.DidYouMean":"Search for {suggestion}."}}
                 queryFields={["text", "title"]}/>
+            </div>
+            <div>
+              <RefinementListFilter
+                id="categories"
+                title="Category"
+                field="categories"
+                operator="AND"/>
             </div>
             <div className="search__results">
               <Hits hitsPerPage={50}

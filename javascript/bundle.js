@@ -21199,6 +21199,15 @@
 	            ),
 	            _react2.default.createElement(
 	              "div",
+	              null,
+	              _react2.default.createElement(_searchkit.RefinementListFilter, {
+	                id: "categories",
+	                title: "Category",
+	                field: "categories",
+	                operator: "AND" })
+	            ),
+	            _react2.default.createElement(
+	              "div",
 	              { className: "search__results" },
 	              _react2.default.createElement(_searchkit.Hits, { hitsPerPage: 50,
 	                highlightFields: ["title", "text"],
