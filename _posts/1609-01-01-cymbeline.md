@@ -2,7 +2,8 @@
 layout: post
 title: "Cymbeline"
 date: 1609-01-01 15:02:16 -0700
-categories: comedy
+categories:
+  - romance
 authors:
   - William Shakespeare
 ---

@@ -1,0 +1,19 @@
+/Users/alli/.rbenv/versions/2.2.2/bin/ruby -r ./siteconf20161230-99042-2odejj.rb extconf.rb
+checking for strlcpy() in string.h... yes
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling binary_protocol_accelerated.c
+compiling bytes.c
+compiling compact_protocol.c
+compiling memory_buffer.c
+compiling protocol.c
+compiling strlcpy.c
+compiling struct.c
+compiling thrift_native.c
+linking shared-object thrift_native.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 thrift_native.bundle ./.gem.20161230-99042-1rhdvrp

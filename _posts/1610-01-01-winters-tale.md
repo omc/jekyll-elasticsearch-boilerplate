@@ -2,7 +2,8 @@
 layout: post
 title: "Winter's Tale"
 date: 1610-01-01 15:02:16 -0700
-categories: comedy
+categories:
+  - romance
 authors:
   - William Shakespeare
 ---

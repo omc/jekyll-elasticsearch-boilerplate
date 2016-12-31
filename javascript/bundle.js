@@ -21133,7 +21133,7 @@
 	// connect elasticsearch with searchkit
 
 	// set url - use a protected URL that only allows read actions
-	var ELASTICSEARCH_URL = 'https://shakestat-2720731900.us-east-1.bonsaisearch.net';
+	var ELASTICSEARCH_URL = 'https://shakestat-oregon-9345328632.us-west-2.bonsaisearch.net';
 	// initialize searchkit manager
 	var sk = new _searchkit2.default.SearchkitManager(ELASTICSEARCH_URL, {});
 
@@ -56954,7 +56954,7 @@
 /* 707 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var require;var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(process, global, module) {/*!
+	var __WEBPACK_AMD_DEFINE_RESULT__;var require;/* WEBPACK VAR INJECTION */(function(process, global, module) {/*!
 	 * @overview es6-promise - a tiny implementation of Promises/A+.
 	 * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
 	 * @license   Licensed under MIT license

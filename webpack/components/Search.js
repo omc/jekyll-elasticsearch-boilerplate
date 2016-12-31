@@ -13,7 +13,7 @@ import * as _ from "lodash";
 // connect elasticsearch with searchkit
 
 // set url - use a protected URL that only allows read actions
-const ELASTICSEARCH_URL = 'https://shakestat-2720731900.us-east-1.bonsaisearch.net';
+const ELASTICSEARCH_URL = 'https://shakestat-oregon-9345328632.us-west-2.bonsaisearch.net';
 // initialize searchkit manager
 const sk = new Searchkit.SearchkitManager(ELASTICSEARCH_URL, {});
 
