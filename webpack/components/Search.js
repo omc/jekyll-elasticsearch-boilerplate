@@ -53,22 +53,25 @@ class Search extends Component {
                 translations={{"searchbox.placeholder":"tomorrow and tomorrow and tomorrow", "NoHits.DidYouMean":"Search for {suggestion}."}}
                 queryFields={["text", "title"]}/>
             </div>
-            <div>
-              <RefinementListFilter
-                id="categories"
-                title="Category"
-                field="categories"
-                operator="AND"/>
+            <div className="_Search_display_wrapper">
+              <div class="_Search_facets">
+                <RefinementListFilter
+                  id="categories"
+                  title="Category"
+                  field="categories"
+                  operator="AND"/>
+              </div>
+              <div className="search__results">
+                <Hits hitsPerPage={50}
+                  highlightFields={["title", "text"]}
+                  itemComponent={HitItem}/>
+                <NoHits className="sk-hits" translations={{
+                  "NoHits.NoResultsFound":"No results were found for {query}",
+                  "NoHits.DidYouMean":"Search for {suggestion}"
+                }} suggestionsField="text"/>
+              </div>
             </div>
-            <div className="search__results">
-              <Hits hitsPerPage={50}
-                highlightFields={["title", "text"]}
-                itemComponent={HitItem}/>
-              <NoHits className="sk-hits" translations={{
-                "NoHits.NoResultsFound":"No results were found for {query}",
-                "NoHits.DidYouMean":"Search for {suggestion}"
-              }} suggestionsField="text"/>
-            </div>
+
          </div>
         </SearchkitProvider>
       </div>
