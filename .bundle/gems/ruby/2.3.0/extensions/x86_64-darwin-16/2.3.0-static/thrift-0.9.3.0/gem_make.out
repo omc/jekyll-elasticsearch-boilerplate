@@ -1,0 +1,27 @@
+current directory: /Users/alli/code/shakestat/.bundle/gems/ruby/2.3.0/gems/thrift-0.9.3.0/ext
+/Users/alli/.rbenv/versions/2.3.3/bin/ruby -r ./siteconf20170103-5616-125v0x5.rb extconf.rb
+checking for strlcpy() in string.h... yes
+creating Makefile
+
+To see why this extension failed to compile, please check the mkmf.log which can be found here:
+
+  /Users/alli/code/shakestat/.bundle/gems/ruby/2.3.0/extensions/x86_64-darwin-16/2.3.0-static/thrift-0.9.3.0/mkmf.log
+
+current directory: /Users/alli/code/shakestat/.bundle/gems/ruby/2.3.0/gems/thrift-0.9.3.0/ext
+make "DESTDIR=" clean
+
+current directory: /Users/alli/code/shakestat/.bundle/gems/ruby/2.3.0/gems/thrift-0.9.3.0/ext
+make "DESTDIR="
+compiling binary_protocol_accelerated.c
+compiling bytes.c
+compiling compact_protocol.c
+compiling memory_buffer.c
+compiling protocol.c
+compiling strlcpy.c
+compiling struct.c
+compiling thrift_native.c
+linking shared-object thrift_native.bundle
+
+current directory: /Users/alli/code/shakestat/.bundle/gems/ruby/2.3.0/gems/thrift-0.9.3.0/ext
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 thrift_native.bundle ./.gem.20170103-5616-1pjtng0
