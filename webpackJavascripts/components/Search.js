@@ -7,7 +7,8 @@ import Searchkit, {
   Hits,
   HitItemProps,
   DynamicRangeFilter,
-  NoHits
+  NoHits,
+  HitsStats
 } from "searchkit";
 import * as _ from "lodash";
 
@@ -54,6 +55,7 @@ class Search extends Component {
             </div>
             <div className="_Search_display_wrapper">
               <div className="_Search_facets">
+                <HitsStats/>
                 <RefinementListFilter
                   id="categories"
                   title="Category"

@@ -21590,6 +21590,7 @@
 	              _react2.default.createElement(
 	                "div",
 	                { className: "_Search_facets" },
+	                _react2.default.createElement(_searchkit.HitsStats, null),
 	                _react2.default.createElement(_searchkit.RefinementListFilter, {
 	                  id: "categories",
 	                  title: "Category",
