@@ -21120,6 +21120,10 @@
 
 	var _ = _interopRequireWildcard(_lodash);
 
+	var _SearchQuotes = __webpack_require__(831);
+
+	var _SearchQuotes2 = _interopRequireDefault(_SearchQuotes);
+
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -21129,6 +21133,11 @@
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // search comopnent!
+
+	// Generate random example searchbox placeholder.
+
+
+	var randomQuote = _SearchQuotes2.default[Math.floor(Math.random() * _SearchQuotes2.default.length)];
 
 	// connect elasticsearch with searchkit
 
@@ -21194,28 +21203,32 @@
 	              _react2.default.createElement(Searchbox, { searchOnChange: true,
 	                autoFocus: true,
 	                queryOptions: queryOpts,
-	                translations: { "searchbox.placeholder": "tomorrow and tomorrow and tomorrow", "NoHits.DidYouMean": "Search for {suggestion}." },
+	                translations: { "searchbox.placeholder": randomQuote, "NoHits.DidYouMean": "Search for {suggestion}." },
 	                queryFields: ["text", "title"] })
 	            ),
 	            _react2.default.createElement(
 	              "div",
-	              null,
-	              _react2.default.createElement(_searchkit.RefinementListFilter, {
-	                id: "categories",
-	                title: "Category",
-	                field: "categories",
-	                operator: "AND" })
-	            ),
-	            _react2.default.createElement(
-	              "div",
-	              { className: "search__results" },
-	              _react2.default.createElement(_searchkit.Hits, { hitsPerPage: 50,
-	                highlightFields: ["title", "text"],
-	                itemComponent: HitItem }),
-	              _react2.default.createElement(_searchkit.NoHits, { className: "sk-hits", translations: {
-	                  "NoHits.NoResultsFound": "No results were found for {query}",
-	                  "NoHits.DidYouMean": "Search for {suggestion}"
-	                }, suggestionsField: "text" })
+	              { className: "_Search_display_wrapper" },
+	              _react2.default.createElement(
+	                "div",
+	                { className: "_Search_facets" },
+	                _react2.default.createElement(_searchkit.RefinementListFilter, {
+	                  id: "categories",
+	                  title: "Category",
+	                  field: "categories",
+	                  operator: "AND" })
+	              ),
+	              _react2.default.createElement(
+	                "div",
+	                { className: "search__results" },
+	                _react2.default.createElement(_searchkit.Hits, { hitsPerPage: 50,
+	                  highlightFields: ["title", "text"],
+	                  itemComponent: HitItem }),
+	                _react2.default.createElement(_searchkit.NoHits, { className: "sk-hits", translations: {
+	                    "NoHits.NoResultsFound": "No results were found for {query}",
+	                    "NoHits.DidYouMean": "Search for {suggestion}"
+	                  }, suggestionsField: "text" })
+	              )
 	            )
 	          )
 	        )
@@ -56963,7 +56976,7 @@
 /* 707 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var __WEBPACK_AMD_DEFINE_RESULT__;var require;/* WEBPACK VAR INJECTION */(function(process, global, module) {/*!
+	var require;var __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(process, global, module) {/*!
 	 * @overview es6-promise - a tiny implementation of Promises/A+.
 	 * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
 	 * @license   Licensed under MIT license
@@ -84444,6 +84457,19 @@
 	}.call(this));
 
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }()), __webpack_require__(357)(module)))
+
+/***/ },
+/* 831 */
+/***/ function(module, exports) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	var SearchQuotes = ["tomorrow and tomorrow and tomorrow creeps in this petty pace", "Be not afraid of greatness", "To thine own self be true", "The course of true love never did run smooth.", "Love all, trust a few, do wrong to none.", "Who's there?", "If music be the food of love, play on.", "The fault, dear Brutus, is not in our stars, but in ourselves, that we are underlings.", "Let the bird of loudest lay", "Let fame, that all hunt after in their lives, Live register'd upon our brazen tombs", "I'll pheeze you, in faith.", "Sir Hugh, persuade me not", "Cease to persuade, my loving Proteus", "In delivering my son from me, I bury a second husband.", "Nay, but this dotage of our general's o'erflows the measure", "I wonder how the king escaped our hands."];
+
+		exports.default = SearchQuotes;
 
 /***/ }
 /******/ ]);

@@ -18,9 +18,10 @@ github_username:  allizad
 permalink: /:title.html
 destination: public
 
-elasticsearch:
-  url: "https://72no0952s3:hlgimonn2x@shakestat-oregon-9345328632.us-west-2.bonsaisearch.net"
-  index_name: "jekyll-shakestat"
+# elasticsearch:
+#   url: ""
+#   index_name: "jekyll-shakestat"
+
 
 # Build settings
 markdown: kramdown
@@ -32,4 +33,4 @@ gems:
   - kramdown
   - jekyll
   # - github-pages
-  - searchyll
+  # - searchyll

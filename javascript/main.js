@@ -1,8 +1,5 @@
+// this is for jquery actions
 $(document).ready(function(){
-  // this is for jquery actions
-
-  console.log("hello from the jquery file!!");
-
   // Grab all line links.
   var $links = $("a");
 
@@ -16,4 +13,4 @@ $(document).ready(function(){
     }
   })
 
-})();
+});

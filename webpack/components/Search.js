@@ -7,9 +7,14 @@ import Searchkit, {
   RefinementListFilter,
   Hits,
   HitItemProps,
+  DynamicRangeFilter,
   NoHits
 } from "searchkit";
 import * as _ from "lodash";
+
+// Generate random example searchbox placeholder.
+import SearchQuotes from './SearchQuotes';
+var randomQuote = SearchQuotes[Math.floor(Math.random() * SearchQuotes.length)];
 
 // connect elasticsearch with searchkit
 
@@ -50,16 +55,17 @@ class Search extends Component {
               <Searchbox searchOnChange={true}
                 autoFocus={true}
                 queryOptions={queryOpts}
-                translations={{"searchbox.placeholder":"tomorrow and tomorrow and tomorrow", "NoHits.DidYouMean":"Search for {suggestion}."}}
+                translations={{"searchbox.placeholder":randomQuote, "NoHits.DidYouMean":"Search for {suggestion}."}}
                 queryFields={["text", "title"]}/>
             </div>
             <div className="_Search_display_wrapper">
-              <div class="_Search_facets">
+              <div className="_Search_facets">
                 <RefinementListFilter
                   id="categories"
                   title="Category"
                   field="categories"
                   operator="AND"/>
+                {/*<DynamicRangeFilter field="date" id="date" title="Date"/>*/}
               </div>
               <div className="search__results">
                 <Hits hitsPerPage={50}
@@ -71,7 +77,6 @@ class Search extends Component {
                 }} suggestionsField="text"/>
               </div>
             </div>
-
          </div>
         </SearchkitProvider>
       </div>
