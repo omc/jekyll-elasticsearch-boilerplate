@@ -4,7 +4,9 @@
   "description": "The fastest and easiest way to search through Shakespeare's work and",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack -w --development",
+    "build": "webpack --progress -p"
   },
   "repository": {
     "type": "git",
@@ -25,12 +27,15 @@
   },
   "homepage": "https://github.com/omc/jekyll-elasticsearch-boilerplate#readme",
   "dependencies": {
-    "webpack": "^1.13.1",
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
     "babel-preset-es2015": "^6.9.0",
     "babel-preset-react": "^6.11.1",
+    "lodash": "^4.17.3",
     "react": "^15.2.1",
-    "react-addons-update": "^15.2.1"
+    "react-addons-update": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "searchkit": "^0.10.0",
+    "webpack": "^1.13.1"
   }
 }

@@ -5,9 +5,9 @@ config.plugins = [
   new webpack.optimize.DedupePlugin(),
   new webpack.optimize.UglifyJsPlugin({
     minimize: true
-    // compress: {
-    //   warnings: false
-    // }
+    compress: {
+      warnings: false
+    }
   }),
   new webpack.DefinePlugin({
     'process.env': {
@@ -15,7 +15,6 @@ config.plugins = [
     }
   })
 ];
-
 config.devtool = 'cheap-module-source-map';
 
 module.exports = config;

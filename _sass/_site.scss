@@ -28,3 +28,21 @@ article {
     }
   }
 }
+
+.anchor-line-link {
+  color: rgba(128, 128, 128, 0.18);
+  position: absolute;
+  text-align: right;
+  right: 0;
+  min-width: 100px;
+  &:hover {
+    color: $link-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .anchor-line-link {
+    right: initial;
+    left: -120px;
+  }
+}

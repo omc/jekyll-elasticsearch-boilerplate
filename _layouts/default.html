@@ -3,16 +3,17 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="site">
 
     {% include header.html %}
 
-    <main class="container">
+    <main class="site-content">
       {{ content }}
     </main>
 
     {% include footer.html %}
-
+    <script type="text/javascript" src="{{ "/javascript/bundle.js" | prepend: site.github.url }}"></script>
+    <script type="text/javascript" src="{{ "/javascript/main.js" | prepend: site.github.url }}"></script>
   </body>
 
 </html>

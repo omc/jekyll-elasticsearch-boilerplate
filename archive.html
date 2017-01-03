@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <div class="container">
+    <ul class="list-unstyled">
+      {% for post in site.posts reversed %}
+        <li>
+          <h4>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> | <small><span class="post-meta">{{ post.date | date: "%Y" }}</span></small>
+          </h4>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

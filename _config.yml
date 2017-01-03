@@ -19,7 +19,9 @@ permalink: /:title.html
 destination: public
 
 # elasticsearch:
+#   url: ""
 #   index_name: "jekyll-shakestat"
+
 
 # Build settings
 markdown: kramdown

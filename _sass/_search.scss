@@ -1,0 +1,44 @@
+#react-search {
+
+}
+
+em {
+  background-color: $em-highlight-color;
+}
+
+.search-wrapper {
+
+}
+
+.sk-hits {
+  .sk-hits-hit.sk-hits__item {
+    margin: 1em 0;
+  }
+}
+
+.sk-search-box {
+  border: 1px solid grey;
+}
+
+@media screen and (min-width: 768px) {
+  ._Search_display_wrapper > div:nth-child(1), ._Search_facets {
+    padding-right: 1em;
+    flex: 3;
+    border-right: 1px solid black;
+  }
+
+  ._Search_display_wrapper {
+    display: flex;
+    margin-top: 1em;
+    .search__results {
+      flex: 9;
+      padding-left: 1em;
+    }
+  }
+}
+
+@media screen and (min-width: 991px) {
+  ._Search_display_wrapper > div:nth-child(1), ._Search_facets {
+    flex: 2;
+  }
+}

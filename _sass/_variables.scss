@@ -1,8 +1,7 @@
+$alzarin: #e74c3c;
 
-$dusty-pink: #C8AEB3;
-$pink: #D17789;
+$link-color: $alzarin;
+$link-hover-color: darken($link-color, 30%);
 
-$link-color: $pink;
-$link-hover-color: darken($pink, 30%);
-
-$footer-color: $dusty-pink;
+$footer-color: $alzarin;
+$em-highlight-color: yellow;

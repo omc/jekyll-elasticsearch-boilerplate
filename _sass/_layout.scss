@@ -1,4 +1,11 @@
-main {
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.site-content {
+  flex: 1;
+  min-height: 80vh;
 }
 
 footer {
@@ -10,4 +17,9 @@ footer {
     font-weight: 200;
     letter-spacing: 0.07em;
   }
+}
+
+#page, #play {
+  padding-top: 2em;
+  position: relative;
 }

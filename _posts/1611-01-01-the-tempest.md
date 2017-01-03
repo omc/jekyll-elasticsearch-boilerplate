@@ -2,7 +2,10 @@
 layout: post
 title: "The Tempest"
 date: 1611-01-01 15:02:16 -0700
-categories: comedy
+categories:
+  - romance
+authors:
+  - William Shakespeare
 ---
 
 <h3>ACT I</h3>

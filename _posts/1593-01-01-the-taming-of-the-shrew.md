@@ -3,6 +3,8 @@ layout: post
 title: "The Taming of the Shrew"
 date: 1593-01-01 15:02:16 -0700
 categories: comedy
+authors:
+  - William Shakespeare
 ---
 
 <h3>SCENE I. Before an alehouse on a heath.</h3>
